@@ -1,8 +1,6 @@
 import React from "react";
 
-const Contoller = ({handlePlayPause, handleReset}) => {
-  
-
+const Contoller = ({ handlePlayPause, handleReset }) => {
   return (
     <div className="controller">
       <button id="start_stop" onClick={handlePlayPause}>
