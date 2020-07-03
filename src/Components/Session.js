@@ -1,7 +1,7 @@
 import React from "react";
 
-const Session = ({ sessionLength }) => {
-  const handleClick = (e) => {console.log(e.target.id)};
+const Session = ({ sessionLength, handleSession }) => {
+  const handleClick = (e) => {handleSession(e.target.id)};
   return (
     <div className="setter">
       <div id="session-label">Session Length</div>
@@ -12,7 +12,11 @@ const Session = ({ sessionLength }) => {
           onClick={handleClick}
         ></i>
         <div id="session-length">{sessionLength}</div>
-        <i className="fas fa-chevron-up" id="session-increment"></i>
+        <i
+          className="fas fa-chevron-up"
+          id="session-increment"
+          onClick={handleClick}
+        ></i>
       </div>
     </div>
   );

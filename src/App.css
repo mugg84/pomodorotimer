@@ -1,4 +1,18 @@
 @import "https://fonts.googleapis.com/css?family=Share+Tech+Mono";
+@font-face {
+  font-family: "Digital";
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot");
+  src: url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7")
+      format("svg");
+}
 
 * {
   margin: 0;
@@ -6,11 +20,28 @@
   box-sizing: border-box;
   font-weight: 700;
   text-align: center;
+  font-size: 1.4rem;
 }
 
 body {
-  font-family: "Share Tech Mono";
-  background-color: rgb(170, 255, 203);
+  font-family: "Share Tech Mono", sans-serif;
+  background-color: rgba(245, 12, 12, 0.767);
+  font-size: 10px;
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+i {
+  font-size: 1.6rem;
+  color: white;
 }
 
 .container {
@@ -23,11 +54,17 @@ body {
 
 .set-timer {
   display: flex;
-  margin: 1rem;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .setter {
-  margin: 1rem;
+}
+
+#session-label,
+#break-label {
+  margin-bottom: 0.5rem;
 }
 
 .mini-controllers {
@@ -36,6 +73,22 @@ body {
   align-items: center;
 }
 
+.mini-controllers i {
+  margin: 0 0.25rem;
+}
+
 .timer {
-  margin: 1rem;
+  padding: 3.5rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.589);
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+#timer-label {
+  margin-bottom: 0.5rem;
+}
+
+#time-left {
+  font-family: "Digital", sans-serif;
+  font-size: 3.5rem;
 }
