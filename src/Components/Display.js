@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Display = ({ counter, isSession }) => {
   const convertTime = () => {
@@ -9,7 +9,10 @@ const Display = ({ counter, isSession }) => {
     return `${minutes > 9 ? minutes : "0" + minutes}:${
       seconds > 9 ? seconds : "0" + seconds
     }`;
+
   };
+
+  document.title = convertTime() === "25:00" ? "Pomodoro Timer" : `(${convertTime()}) Pomodoroo Timer`
 
   return (
     <div className="timer">
