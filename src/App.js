@@ -57,6 +57,7 @@ const App = () => {
       isSession ? setCounter(breakLength * 60) : setCounter(sessionLength * 60);
       isSession ? setIsSession(false) : setIsSession(true);
     }
+    // eslint-disable-next-line
   }, [counter, running, isSession]);
 
   const audioRef = React.useRef();
